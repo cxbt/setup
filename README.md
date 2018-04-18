@@ -13,3 +13,7 @@ Becoming one man army in hazardous world... with *scripts*!
 [conemu.xml](https://github.com/CXBT/cxbt-dotfile/blob/master/conemu.xml) : Exported custom conemu setting
 - styles like xterm
 - transparent ubuntu colored background (used image)
+
+[setting.sh](https://github.com/CXBT/cxbt-dotfile/blob/master/setting.sh) : Shellscript setting linux environment automatically
+- .bash_profile
+- .vimrc
