@@ -12,7 +12,7 @@ sudo apt update
 sudo apt upgrade
 
 echo "[+] Installing Vim"
-sudo apt install vim
+sudo apt -y install vim
 
 echo "[+] Installing Vim Vundle"
 if [ ! -d "~/.vim/bundle" ]; then
@@ -22,8 +22,8 @@ else
 fi
 
 echo "[+] Installing Vim YouCompleteMe with semantic support for C-familiy languages"
-sudo apt install python-minimal
-sudo apt install build-essential cmake python-dev python3-dev
+sudo apt -y install python-minimal
+sudo apt -y install build-essential cmake python-dev python3-dev
 cd ~/.vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
@@ -35,7 +35,7 @@ echo "[+] Getting vimrc"
 cat $pwd/linux/vimrc > ~/.vimrc
 
 echo "[+] Installing GDB"
-sudo apt install gdb
+sudo apt -y install gdb
 
 echo "[+] Installing Peda"
 if [ -d "~/peda" ]; then
