@@ -9,7 +9,7 @@ git config --global user.name "Jehwan Yun"
 echo "[+] Updating and Upgrading APT List"
 
 sudo apt update
-sudo apt upgrade
+sudo apt -y upgrade
 
 echo "[+] Installing Vim"
 sudo apt -y install vim
@@ -38,7 +38,7 @@ echo "[+] Installing GDB"
 sudo apt -y install gdb
 
 echo "[+] Installing Peda"
-if [ -d "~/peda" ]; then
+if [ ! -d "~/peda" ]; then
 	git clone https://github.com/longld/peda ~/peda
 else
 	echo "[!] Peda already installed"
