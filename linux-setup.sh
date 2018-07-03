@@ -3,11 +3,12 @@
 $pwd=$(pwd)
 
 echo "[+] Updating and Upgrading APT List"
-apt update
-apt upgrade
+
+sudo apt update
+sudo apt upgrade
 
 echo "[+] Installing Vim"
-apt install vim
+sudo apt install vim
 
 echo "[+] Installing Vim Vundle"
 if [ -d "~/.vim/bundle" ]; then
@@ -17,8 +18,8 @@ else
 fi
 
 echo "[+] Installing Vim YouCompleteMe with semantic support for C-familiy languages"
-apt install python-minimal
-apt install build-essential cmake python-dev python3-dev
+sudo apt install python-minimal
+sudo apt install build-essential cmake python-dev python3-dev
 cd ~/vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
@@ -30,7 +31,7 @@ echo "[+] Getting vimrc"
 cat linux/vimrc > ~/.vimrc
 
 echo "[+] Installing GDB"
-apt install gdb
+sudo apt install gdb
 
 echo "[+] Installing Peda"
 if [ -d "~/peda" ]; then
