@@ -15,7 +15,7 @@ echo "[+] Installing Vim"
 sudo apt install vim
 
 echo "[+] Installing Vim Vundle"
-if [ -d "~/.vim/bundle" ]; then
+if [ ! -d "~/.vim/bundle" ]; then
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 else
 	echo "[!] Vim Vundle already installed"
