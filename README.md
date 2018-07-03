@@ -1,19 +1,17 @@
 # cxbt-dotfile
+
 Becoming one man army in hazardous world... with *scripts*!
 
-## Lists
-[centos_gui.sh](https://github.com/CXBT/cxbt-dotfile/blob/master/centos_gui.sh) : Shellscript setting X Window Environment on CentOS7
+## How to use
 
-[vimrc](https://github.com/CXBT/cxbt-dotfile/blob/master/.vimrc) : Custom vim setting
+### Linux
 
-[bash_profile](https://github.com/CXBT/cxbt-dotfile/blob/master/.bash_profile) : Custom bash_profile
-- show git branch
-- import bashrc setting
+```
+git clone https://github.com/cxbt/cxbt-dotfile
+cd cxbt-dotfile
+./linux-setup.sh
+```
 
-[conemu.xml](https://github.com/CXBT/cxbt-dotfile/blob/master/conemu.xml) : Exported custom conemu setting
-- styles like xterm
-- transparent ubuntu colored background (used image)
+### Windows
 
-[setting.sh](https://github.com/CXBT/cxbt-dotfile/blob/master/setting.sh) : Shellscript setting linux environment automatically
-- .bash_profile
-- .vimrc
+Do-It-Yourself~
