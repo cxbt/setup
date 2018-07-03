@@ -1,6 +1,10 @@
 #! /bin/bash
 
-$pwd=$(pwd)
+pwd=$(pwd)
+
+echo "[+] Setting Global Git Account"
+git config --global user.email "cluxebot@gmail.com"
+git config --global user.name "Jehwan Yun"
 
 echo "[+] Updating and Upgrading APT List"
 
@@ -20,7 +24,7 @@ fi
 echo "[+] Installing Vim YouCompleteMe with semantic support for C-familiy languages"
 sudo apt install python-minimal
 sudo apt install build-essential cmake python-dev python3-dev
-cd ~/vim/bundle
+cd ~/.vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
 git submodule update --init --recursive
@@ -28,7 +32,7 @@ git submodule update --init --recursive
 cd $pwd
 
 echo "[+] Getting vimrc"
-cat linux/vimrc > ~/.vimrc
+cat $pwd/linux/vimrc > ~/.vimrc
 
 echo "[+] Installing GDB"
 sudo apt install gdb
@@ -41,8 +45,8 @@ else
 fi
 
 echo "[+] Getting gdbinit"
-cat linux/gdbinit > ~/.gdbinit
+cat $pwd/linux/gdbinit > ~/.gdbinit
 
 echo "[+] Getting bash_profile"
 echo "[!] Type \"source .bash_profile\""
-cat linux/bash_profile > ~/.bash_profile
+cat $pwd/linux/bash_profile > ~/.bash_profile
