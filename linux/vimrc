@@ -11,8 +11,17 @@ au BufReadPost *
 \ exe "norm g'\"" |
 \ endif
 
-set laststatus=2 "enable status bar
+"enable status bar
+set laststatus=2
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
+
+"<F7> to auto indent code
+map <F7> mzgg=G`z
+
+"file encoding to korean
+if $LANG[0]=='k' && $LANG[1]=='o'
+	set fileencoding=korea
+endif
 
 set hlsearch
 set tabstop=4
@@ -25,11 +34,6 @@ set ruler
 
 set splitright
 set splitbelow
-
-"file encoding to korean
-if $LANG[0]=='k' && $LANG[1]=='o'
-	set fileencoding=korea
-endif
 
 colorscheme elflord
 
