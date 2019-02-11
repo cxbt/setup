@@ -1,8 +1,5 @@
-"Source :
-
-"Syntax Highlighting
 if has("syntax")
-	syntax on
+        syntax on
 endif
 
 "Place Cursor on last modified location
@@ -20,7 +17,7 @@ map <F7> mzgg=G`z
 
 "file encoding to korean
 if $LANG[0]=='k' && $LANG[1]=='o'
-	set fileencoding=korea
+        set fileencoding=korea
 endif
 
 set hlsearch
@@ -36,12 +33,3 @@ set splitright
 set splitbelow
 
 colorscheme elflord
-
-g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-	Plugin 'VundleVim/Vundle.vim'
-	Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
