@@ -1,0 +1,21 @@
+{
+    "background" : "#000F1D",
+    "black" : "#384887",
+    "blue" : "#225588",
+    "brightBlack" : "#384887",
+    "brightBlue" : "#225588",
+    "brightCyan" : "#2aa198",
+    "brightGreen" : "#22aa44",
+    "brightPurple" : "#6c71c4",
+    "brightRed" : "#f280d0",
+    "brightWhite" : "#fdf6e3",
+    "brightYellow" : "#2277ff",
+    "cyan" : "#2aa198",
+    "foreground" : "#FDF6E3",
+    "green" : "#22aa44",
+    "name" : "Abyss",
+    "purple" : "#6c71c4",
+    "red" : "#f280d0",
+    "white" : "#fdf6e3",
+    "yellow" : "#2277ff"
+}
